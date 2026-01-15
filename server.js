@@ -167,8 +167,8 @@ app.get('/api/admin/inquiries', (req, res) => {
         const [username, password] = credentials.split(':');
 
         // Check credentials (use environment variables in production)
-        const adminUser = process.env.ADMIN_USER || 'admin';
-        const adminPass = process.env.ADMIN_PASS || 'safarsorted123';
+        const adminUser = process.env.ADMIN_USER || 'Mehul20020';
+        const adminPass = process.env.ADMIN_PASS || 'Ninja2002@';
 
         if (username !== adminUser || password !== adminPass) {
             return res.status(401).json({ error: 'Invalid credentials' });
